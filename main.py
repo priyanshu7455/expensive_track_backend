@@ -39,7 +39,8 @@ def get_connection():
         user=os.getenv("db_user"),
         password=os.getenv("db_password"),
         database=os.getenv("db_database"),
-        port=int(os.getenv("db_port", 3306))
+        port=int(os.getenv("db_port", 3306)),
+        ssl_disabled=True
     )
 
 # ─── Init Table ────────────────────────────────────────────────────────────────
